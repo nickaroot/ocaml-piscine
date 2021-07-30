@@ -1,5 +1,5 @@
 let rec ft_power n e =
-    if e == 0 then
+    if e = 0 then
         1
     else
         n * ft_power n (e - 1)

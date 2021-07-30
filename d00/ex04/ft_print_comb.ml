@@ -1,11 +1,11 @@
 let rec ft_next_unit h t u =
-    if (u > t) && (t > h) then
+    if u > t && t > h then
     begin
         print_int h;
         print_int t;
         print_int u;
 
-        if (h == 7) && (t == 8) && (u == 9)
+        if h = 7 && t = 8 && u = 9
         then print_string "\n"
         else print_string ", "
     end;

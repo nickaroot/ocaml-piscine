@@ -3,9 +3,9 @@ let ft_rot_n n str =
         let a = int_of_char 'a' in
         let ca = int_of_char 'A' in
 
-        if ((c >= 'A') && (c <= 'Z'))
+        if c >= 'A' && c <= 'Z'
         then char_of_int (ca + (((int_of_char c) + n - ca) mod 26))
-        else if ((c >= 'a') && (c <= 'z'))
+        else if c >= 'a' && c <= 'z'
         then char_of_int (a + (((int_of_char c) + n - a) mod 26))
         else c
     in

@@ -5,7 +5,7 @@ let ft_is_palindrome s =
 
     let rec loop i =
         if m + i < l then
-            if not (s.[m + i] == s.[n - i])
+            if s.[m + i] <> s.[n - i]
             then false
             else loop (i + 1)
         else true
